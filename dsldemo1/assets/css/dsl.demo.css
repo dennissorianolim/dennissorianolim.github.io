@@ -1,0 +1,206 @@
+/* FONTS */
+@font-face {
+    font-family: "reformagrotesklight";
+    src: url("../fonts/reformagrotesklight/reformagrotesklight.eot") ;
+    src: url("../fonts/reformagrotesklight/reformagrotesklight.eot")format('embedded-opentype'),
+         url("../fonts/reformagrotesklight/reformagrotesklight.woff2")format('woff2'),
+         url("../fonts/reformagrotesklight/reformagrotesklight.woff")format('woff'),
+         url("../fonts/reformagrotesklight/reformagrotesklight.ttf")format('truetype'),
+         url("../fonts/reformagrotesklight/reformagrotesklight.svg#reformagrotesklight")format('svg')
+}
+
+@font-face {
+    font-family: "reformagroteskmedium";
+    src: url("../fonts/reformagroteskmedium/reformagroteskmedium.eot");
+    src: url("../fonts/reformagroteskmedium/reformagroteskmedium.eot")format('embedded-opentype'),
+         url("../fonts/reformagroteskmedium/reformagroteskmedium.woff2")format('woff2'),
+         url("../fonts/reformagroteskmedium/reformagroteskmedium.woff")format('woff'),
+         url("../fonts/reformagroteskmedium/reformagroteskmedium.ttf")format('truetype'),
+         url("../fonts/reformagroteskmedium/reformagroteskmedium.svg#reformagroteskmedium")format('svg')
+}
+
+@font-face {
+    font-family: "proximanovaregular";
+    src: url("../fonts/proximanovaregular/proximanovaregular.eot");
+    src: url("../fonts/proximanovaregular/proximanovaregular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/proximanovaregular/proximanovaregular.woff2") format("woff2"),
+         url("../fonts/proximanovaregular/proximanovaregular.woff") format("woff"),
+         url("../fonts/proximanovaregular/proximanovaregular.ttf") format("truetype"),
+         url("../fonts/proximanovaregular/proximanovaregular.svg#proximanovaregular") format("svg")
+}
+
+a {text-decoration: none !important;}
+
+/* FLOATING STATIC ITEMS */
+#floatingObjects {position: relative; width: 100%; min-width: 100%;}
+
+    .logo a {position: fixed; z-index: 9999; top: 19px; left: 19px; width: 125px; height: 145px; background: url("../imgs/floating/logo.png") no-repeat; background-size: contain;}
+
+    .social {position: fixed; z-index: 9999; top: 19px; right: 19px;}
+        .social a.fb {width: 40px; height: 40px; display: inline-block; background: url("../imgs/floating/socials.png") no-repeat; background-position: 0 0; margin-right: 6px;}
+            .social a.fb:hover {background-position: 0 -40px;}
+        .social a.tw {width: 40px; height: 40px; display: inline-block; background: url("../imgs/floating/socials.png") no-repeat; background-position: -40px 0;}
+            .social a.tw:hover {background-position: -40px -40px;}
+
+    #iphoneContainer {position: fixed; z-index: 99998; top: 50%; left: 50%; width: 328px; height: 634px; margin-top: -317px; margin-left: -164px; background: url("../imgs/floating/iphone.png") no-repeat; background-size: contain; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out;}
+        .fp-viewing-fourthPage #iphoneContainer {top: -1000px;}
+
+    .iphone {position: relative;}
+
+    a.download-app {position: absolute; z-index: 99999; top: 87px; left: 42px; width: 243px; height: 429px; transition: all 0.5s ease-out; -webkit-transition: all 0.5s ease-out;}
+            .download-for-iphone {display: none; font-family: 'reformagroteskmedium', sans-serif; font-size: 2.15em; color: #90c8b9; text-align: center; border: 1px dotted #90c8b9; padding: 12px; margin: 80px 30px 50px 30px; text-decoration: none; outline: none; transition: all 0.5s ease-out; -webkit-transition: all 0.5s ease-out;}
+            .enjoy50 {display: none; font-family: 'reformagroteskmedium', sans-serif; font-size: 1.5em; color: #efefef; text-align: center; text-transform: uppercase; text-decoration: none; outline: none; transition: all 0.5s ease-out; -webkit-transition: all 0.5s ease-out;}
+            .percent50 {color: #f98873;}
+        a.download-app:hover {background-color: #315867;}
+        a.download-app:hover .download-for-iphone, a.download-app:hover .enjoy50 {display: block;}
+        a.download-app:hover .iphone-slider {display: none;}
+
+        .iphone-slider {width: 243px; height: 429px; overflow: hidden;}
+
+        .iphone-slider video {margin: 0 auto; transition: transform 0.5s linear; -webkit-transition: transform 0.5s linear;}
+
+        .fp-viewing-firstPage #video-01 {transform: translateY(0);}
+        .fp-viewing-secondPage #video-01 {transform: translateY(-429px);}
+        .fp-viewing-secondPage #video-02 {transform: translateY(-434px);}
+        .fp-viewing-secondPage #video-03 {transform: translateY(-434px);}
+        .fp-viewing-thirdPage-0 #video-02 {transform: translateY(-866px);}
+        .fp-viewing-thirdPage-0 #video-03 {transform: translateY(-868px);}
+        .fp-viewing-thirdPage-1 #video-03 {transform: translateY(-868px);}
+        .fp-viewing-thirdPage-2 #video-03 {transform: translateY(-868px);}
+
+    .appstore a {position: fixed; z-index: 9999; bottom: 19px; left: 19px; width: 180px; height: 54px; background: url("../imgs/floating/appstore.png") no-repeat; background-size: contain;}
+    .awwwards {position: fixed; z-index: 9999; bottom: 0px; right: 0px; width: 115px; height: 115px; background: url("../imgs/floating/awwwards.png") no-repeat; background-size: contain;}
+    .fwa {position: fixed; z-index: 9999; bottom: 0px; right: 0px; width: 70px; height: 70px; background: url("../imgs/floating/fwa.png") no-repeat; background-size: contain;}
+
+    #footer {position: fixed; z-index: 9998; bottom: 10px; width: 100%; transition: opacity 0.5s ease-out; -webkit-transition: opacity 0.5s ease-out;}
+
+        #arrowDown {position: relative; display: block; width: 24.5px; height: 24.5px; transform: rotate(45deg); margin: 14px auto; border-right: 3px solid #fff; border-bottom: 3px solid #fff; -webkit-animation: pointdown 3s linear infinite; animation: pointdown 3s linear infinite; transition: opacity 0.5s ease-in-out; -webkit-transition: opacity 0.5s ease-in-out;}
+
+            @-webkit-keyframes pointdown { 0% {top: -10px;} 5% {top: 30px;} 10% {top: -10px;} 15% {top: 30px;} 25% {top: 0px;} 50% {top: 0px;} 100% {top: 0px;} }
+
+            @keyframes pointdown { 0% {top: -10px;} 5% {top: 30px;} 10% {top: -10px;} 15% {top: 30px;} 25% {top: 0px;} 50% {top: 0px;} 100% {top: 0px;} }
+
+        .fp-viewing-firstPage #arrowDown {opacity: 1 !important;}
+        .fp-viewing-secondPage #arrowDown, .fp-viewing-thirdPage-0 #arrowDown, .fp-viewing-thirdPage-1 #arrowDown, .fp-viewing-thirdPage-2 #arrowDown, .fp-viewing-fourthPage #arrowDown {opacity: 0 !important;}
+
+        #copyRight {color: rgba(255,255,255,0.5) !important; text-align: center !important; font-size: 0.9em; line-height: 180%;}
+        .fp-viewing-firstPage #copyRight {opacity: 0 !important;}
+        .fp-viewing-fourthPage #copyRight {color: #a0a0a0 !important;}
+
+/* NAVIGATION */
+.fp-next {right: 50px !important;}
+#fp-nav {z-index: 10000 !important;}
+#fp-nav ul li a span {background-color: #fff !important;}
+
+p {font-family: 'proximanovaregular', sans-serif; color: #fff;}
+
+.page-column-left {display: inline-block; width: 30%; left: 0;}
+
+.page-column-right {display: inline-block; width: 30%; right: 0;}
+
+.pad-left {padding: 20px 20px 20px 120px;}
+.pad-right {padding: 20px 120px 20px 20px;}
+
+/* FIRST PAGE */
+#firstPageContent {position: fixed; z-index: 9990; top: 40%; left: 0; min-width: 100%; min-height: 100%; width: auto; height: auto;}
+    #firstPageContent h1 {font-family: 'reformagroteskmedium', sans-serif; font-size: 100px; color: #fff; transition: all 1s ease-out;}
+    .fp-viewing-firstPage #firstPageContent h1 {transform: scale(1.1);}
+    .fp-viewing-secondPage #firstPageContent h1, .fp-viewing-thirdPage-0 #firstPageContent h1, .fp-viewing-fourthPage #firstPageContent h1 {transform: scale(0.5); opacity: 0;}
+    .fp-viewing-thirdPage-0 #firstPageContent, .fp-viewing-thirdPage-1 #firstPageContent, .fp-viewing-thirdPage-2 #firstPageContent, .fp-viewing-fourthPage #firstPageContent {display: none !important;}
+
+#section0 .screen {position: fixed; top: 0; left: 0; z-index: 1; background-color: #659ea9; background-size: cover; min-width: 100%; min-height: 100%; width: auto; height: auto; opacity: 0.8;}
+#introVideo {position: fixed; top: 0; left: 0; z-index: 0; background: url("") no-repeat; background-size: cover; min-width: 100%; min-height: 100%; width: auto; height: auto;}
+
+/* SECOND PAGE */
+#section1 h2 {font-family: 'reformagroteskmedium', sans-serif; font-size: 40px; color: #ffb6a5; text-align: center;}
+#section1 p {text-align: center; font-size: 1.25em;}
+.divider {display: block; width: 180px; height: 15px; margin: 80px auto 70px; background: url("../imgs/hr-bg.png") 50% no-repeat;}
+#section1 h4 {font-family: 'reformagroteskmedium', sans-serif; font-size: 20px; text-transform: uppercase; color: #ffb6a5; text-align: center;}
+.tour-nyc {font-family: 'reformagrotesklight', sans-serif; font-size: 100px; text-transform: uppercase; color: #fff; text-align: center;}
+
+/* THIRD PAGE */
+.icons {text-align: center; margin: 0 auto 12px auto; width: 50px; height: 50px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0px 2.5px 12px rgba(0,0,0,0.75);}
+#section2 h2 {font-family: 'reformagroteskmedium', sans-serif; font-size: 30px; line-height: 150%; text-transform: uppercase; text-align: center;}
+#section2 p {font-size: 1.5em; line-height: 1.5em; text-align: center;}
+#slide1 {background: url("../imgs/bgs/slide-bg-1.jpg") no-repeat; background-size: cover;}
+    #slide1 h2 {color: #90c8b9;}
+    #slide1 .icons {background: url("../imgs/slide-icons/slide-icon-1.png") no-repeat 35% 55%; background-size: 24px 34px;}
+#slide2 {background: url("../imgs/bgs/slide-bg-2.jpg") no-repeat; background-size: cover;}
+    #slide2 h2 {color: #c5d5e4;}
+    #slide2 .icons {background: url("../imgs/slide-icons/slide-icon-2.png") no-repeat 50% 55%; background-size: 32px 32px;}
+#slide3 {background: url("../imgs/bgs/slide-bg-3.jpg") no-repeat; background-size: cover;}
+    #slide3 h2 {color: #cfe6b2;}
+    #slide3 .icons {background: url("../imgs/slide-icons/slide-icon-3.png") no-repeat 48% 46%; background-size: 24px 34px;}
+
+/* LAST PAGE */
+#lastPage .container {position: relative;}
+
+#lastPage h1 {font-family: 'reformagroteskmedium', sans-serif; font-size: 60px; text-align: center; color: #333; margin-bottom: 1em;}
+    .lastpage-title {position: relative; line-height: 80px;}
+    .lastpage-title::before {content: ""; position: absolute; z-index: 1; top: 0; left: 50%; width: 52px; height: 79px; margin: -65px 0 0 -26px; background: url("../imgs/last-page/title-icon.png") no-repeat; background-size: 42px 64px;}
+    .lastpage-title::after {content: ""; position: absolute; z-index: 1; top: 100%; left: 50%; width: 350px; height: 15px; margin: 0 0 0 -175px; background: url("../imgs/last-page/title-underline.png") no-repeat;}
+
+#lastPage h4 {color: #333; font-weight: 600;}
+
+#lastPage p {color: #333; text-align: left;}
+
+.fp-viewing-firstPage .parallax-item, .fp-viewing-secondPage .parallax-item, .fp-viewing-thirdPage-0 .parallax-item, .fp-viewing-thirdPage-1 .parallax-item, .fp-viewing-thirdPage-2 .parallax-item {bottom: -1000px;}
+
+    .parallax-item {position: absolute; z-index: 999; transition: all 1s ease-out;}
+        .fp-viewing-fourthPage .pi-1 {bottom: 400px; left: 150px; width: 200px; height: 121px;}
+        .fp-viewing-fourthPage .pi-2 {bottom: 150px; left: 50px; width: 160px; height: 89px;}
+        .fp-viewing-fourthPage .pi-3 {bottom: 100px; right: 50px; width: 120px; height: 190px;}
+        .fp-viewing-fourthPage .pi-4 {bottom: 360px; right: 120px; width: 170px; height: 191px;}
+        .fp-viewing-fourthPage .pi-5 {bottom: -130px; left: 190px; width: 120px; height: 190px;}
+        .fp-viewing-fourthPage .pi-6 {bottom: -100px; right: 130px; width: 180px; height: 125px;}
+
+/* MOBILE DEVICE MODE */
+@media all and (max-width: 991px) {
+
+    body {background-color: #659ea9; overflow-y: scroll !important;}
+
+    div.container {width: 100%; margin: 0;}
+
+    #mobileSection01 {background: url("../imgs/mobile/bg-01.jpg") no-repeat; background-size: cover;}
+
+        #mobileLogo img {margin: 19px auto 12px 0; width: 80%; max-width: 708px;}
+
+        a.fb, a.tw {position: relative; display: inline-block; margin: 24px auto auto auto;}
+            a.fb img, a.tw img {margin: 12px auto; width: 95%; max-width: 80px;}
+
+        #mobileMessage1 {text-align: center;}
+            #mobileMessage1 img {margin: 12px auto; width: 90%; max-width: 708px;}
+
+        #mobileVideoContainer {text-align: center;}
+            #mobileVideoContainer img {margin: 12px auto; width: 90%; max-width: 708px;}
+            #mobileVideo {display: none;}
+
+        #mobileMessage2 {text-align: center;}
+            #mobileMessage2 h4 {font-family: "proximanovaregular", sans-serif; font-size: 3rem; text-align: center; color: #fff; padding: 1.5em 2em;}
+
+    #mobileSection02 {background: url("../imgs/mobile/bg-02.jpg") no-repeat; background-size: cover;}
+
+        #mobileHeading1 {text-align: center;}
+            #mobileHeading1 h1 {font-family: "reformagroteskmedium", sans-serif; font-size: 5em; text-align: center; text-transform: uppercase; color: #ffb6a5; margin-top: 1.5em;}
+
+        #mobileDivider {text-align: center;}
+            #mobileDivider img {margin: 12px auto; width: 60%; max-width: 360px;}
+
+        #mobileAppstore {text-align: center;}
+            #mobileAppstore img {margin: 12px auto; width: 60%; max-width: 360px;}
+
+        #mobileFooter {margin: 6em auto 4em auto;}
+            #mobileFooter table {width: 90%; margin: 0 auto;}
+            #mobileFooter table td {vertical-align: middle; border: 2px solid #fff; border-collapse: collapse;}
+            #mobileFooter h1 {font-family: "reformagroteskmedium", sans-serif; font-size: 4em; line-height: 85%; text-align: center; text-transform: uppercase; color: #fff; margin: 20px auto; padding-right: 20px; padding-left: 20px;}
+            #mobileFooter a {font-family: "reformagroteskmedium", sans-serif; font-size: 3em; text-transform: uppercase; color: #fff; outline: none;}
+            .right-part {padding: 20px;}
+                .right-part p {font-size: 2em;}
+
+    #fp-nav.right {display: none !important;}
+}
+
+@media all and (max-width: 768px) {
+        h4, .left-part, .right-part {font-size: 1rem;}
+        a.fb, a.tw {margin-top: 19px}       
+}

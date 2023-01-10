@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta author="Dennis S. Lim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+        <title>DENNIS LIM (DEMO)</title>
+
+        <link rel="shortcut icon" type="image/icon" href="assets/fav/favicon.ico">
+        <link rel="icon" type="image/icon" href="assets/fav/favicon.ico">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/dsl.demo.min.css" />
+
+    </head>
+    <body>
+
+        <div id="mobileMode" class="hidden-md hidden-lg">
+            <div id="mobileSection01" class="container">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8">
+                        <div id="mobileLogo">
+                            <img src="assets/imgs/mobile/logo.png" alt="DEMO LOGO" />
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2">
+                        <a href="https://www.linkedin.com/in/dennissorianolim/" class="fb" target="_blank">
+                            <img src="assets/imgs/mobile/icon-fb.png" alt="facebook" />
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2">
+                        <a href="https://www.linkedin.com/in/dennissorianolim/" class="tw" target="_blank">
+                            <img src="assets/imgs/mobile/icon-tw.png" alt="twitter" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileMessage1">
+                            <img src="assets/imgs/mobile/typography.png" alt="A Better Way ..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileVideoContainer">
+                            <a href="#" id="playMobileVideo" onclick="toggleFullScreen('mobileVideo'); return false;"><img src="assets/imgs/mobile/video.png" alt="video" /></a>
+                            <video id="mobileVideo" width="100%" controls="controls">
+                                <source src="assets/vids/video.mp4" type="video/mp4">
+                                <source src="assets/vids/video.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileMessage2">
+                            <h4>Fusce viverra nulla eu sagittis porttitor. Suspendisse fringilla gravida nisl. In vel rhoncus erat. Aenean nec congue mauris.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /#mobileSection01 -->
+            <div id="mobileSection02" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileHeading1">
+                            <h1>Lorem ut tellus</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileMessage2">
+                            <h4>Il Nulla iaculis turpis auctor mattis porttitor. Phasellus volutpat ultrices nulla, consectetur laoreet diam viverra a.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileDivider">
+                            <img src="assets/imgs/mobile/divider.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileMessage2">
+                            <h4>Fus Suspendisse fringilla gravida nisl. In vel rhoncus erat. Aenean nec congue mauris, eget ullamcorper eros. In eu massa at nisi efficitur euismod.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileAppstore">
+                            <img src="assets/imgs/mobile/appstore.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileFooter">
+                            <table class="footer">
+                                <tbody>
+                                    <tr>
+                                        <td class="left-part">
+                                            <h1>DEMO<br />LOGO</h1>
+                                        </td>
+                                        <td class="right-part">
+                                            <p>Consectetur laoreet Diam Viverra ut. <strong>&copy; 2008 <span class="currentYear"></span></strong></p>
+                                            <a href="mailto:hello@demo-logo.com">hello@demo-logo.com</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="mobileMessage2">
+                            <h4>Sunc consectetur lacus eu efficitur porta.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /#mobileSection02 -->
+        </div><!-- /#mobileMode -->
+
+        <div id="fobjects" class="floating-objects hidden-xs hidden-sm">
+            <div class="logo"><a href="#firstPage"></a></div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/dennissorianolim/" class="fb" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/dennissorianolim/" class="tw" target="_blank"></a>
+            </div>
+            <div id="iphoneContainer">
+                <div class="iphone">
+                    <a href="#firstPage" class="download-app">
+                        <div class="download-for-iphone">DOWNLOAD<br />FOR IPHONE</div>
+                        <div class="enjoy50">Etiam <span class="percent50">50%</span> Praes Cur<br />Eu Ut Set Tellus</div>
+                        <div class="iphone-slider">
+                            <video id="video-01" width="243" height="429" autoplay loop>
+                                <source src="assets/vids/iphone-vid-01.mp4" type="video/mp4">
+                                <source src="assets/vids/iphone-vid-01.webm" type="video/webm">
+                                <img src="assets/imgs/iphone-slider/slide-01.jpg" width="243" height="429" title="Your browser does not support the <video> tag." />
+                            </video>
+                            <video id="video-02" width="243" height="429" autoplay loop>
+                                <source src="assets/vids/iphone-vid-02.mp4" type="video/mp4">
+                                <source src="assets/vids/iphone-vid-02.webm" type="video/webm">
+                                <img src="assets/imgs/iphone-slider/slide-01.jpg" width="243" height="429" title="Your browser does not support the <video> tag." />
+                            </video>
+                            <video id="video-03" width="243" height="429" autoplay loop>
+                                <source src="assets/vids/iphone-vid-03.mp4" type="video/mp4">
+                                <source src="assets/vids/iphone-vid-03.webm" type="video/webm">
+                                <img src="assets/imgs/iphone-slider/slide-01.jpg" width="243" height="429" title="Your browser does not support the <video> tag." />
+                            </video>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="firstPageContent" class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 style="text-align: right;">THIS IS THE</h1>
+                    </div>
+                    <div class="col-md-4">
+                    </div>                        
+                    <div class="col-md-4">
+                        <h1 style="text-align: left;">FIRST PAGE</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="appstore"><a href="https://www.linkedin.com/in/dennissorianolim/" target="_blank"></a></div>
+            <div class="awwwards"></div>
+            <div class="fwa"></div>
+            <div id="footer">
+                <div id="arrowContainer"><a href="#secondPage" id="arrowDown" title="Scroll Down! to See More ..."></a></div>
+                <p id="copyRight">&copy; 2016 <span class="currentYear"></span> Copyright. IMBA NewCo. LTD. LLC. All Rights Reserved.<br /><span class="hidden-xs hidden-sm">By Dennis S. Lim - UI/UX, HTML/CSS/JS/PHP/SQL Ninja as well as Web and App Developer and Designer.</span></p>
+            </div>
+        </div><!-- /#fobjects -->
+
+        <div id="fullpage" class="hidden-xs hidden-sm">
+            <div class="section " id="section0">
+                <div class="intro">
+                    <div class="screen"></div>
+                    <div class="video-bg-container">
+                        <video id="introVideo" autoplay="true" loop="true" muted="true">
+                            <source src="assets/vids/nyc-traffic-vid.mp4" type="video/mp4">
+                            <source src="assets/vids/nyc-traffic-vid.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="section " id="section1">
+                <div class="intro">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 pad-left">
+                                <h2>SECOND PAGE</h2>
+                                <p>Vivamus iaculis lorem at turpis tempus efficitur. Vivamus arcu tortor.</p>
+                                <div class="divider"></div>
+                                <h4>Nullam id turpis sem.<br />Suspendisse iaculis urna.</h4>
+                                <div class="tour-nyc">
+                                    <span class="c0">n</span>
+                                    <span class="c1">y</span>
+                                    <span class="c2">c</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                    
+                            </div>                        
+                            <div class="col-md-4 pad-right">
+                                <h2>PAGE TWO</h2>
+                                <p>Cras efficitur aliquet quam, a ultricies nibh vulputate et. Nulla eget nulla metus.</p>
+                                <div class="divider"></div>
+                                <h4>Vestibulum ante ipsum primis<br />In faucibus orci luctus et.</h4>
+                                <p align="center" style="margin-top: 2em;"><img src="assets/imgs/midtown.png" alt="midtown" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <div class="slide" id="slide1">
+                    <div class="intro">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 pad-left">
+                                    <div class="icons icon-1"></div>
+                                    <h2>Aenean euismod imperdiet est eget vestibulum.</h2>
+                                </div>
+                                <div class="col-md-4">
+                                        
+                                </div>                        
+                                <div class="col-md-4 pad-right">
+                                    <p>Cras congue tempor sapien, finibus faucibus lorem sollicitudin a. Pellentesque posuere quis lorem ultrices porta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" id="slide2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 pad-left">
+                                    <div class="icons icon-2"></div>
+                                    <h2>Proin tempor nunc at leo lacinia, vitae ornare.</h2>
+                                </div>
+                                <div class="col-md-4">
+                                        
+                                </div>                        
+                                <div class="col-md-4 pad-right">
+                                    <p>Nullam id turpis sem. Suspendisse iaculis urna ut lectus pretium, quis blandit nibh auctor. Vestibulum ante ipsum primis in faucibus.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="slide" id="slide3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 pad-left">
+                                    <div class="icons icon-3"></div>
+                                    <h2>Ut dui lectus, dignissim ut lectus eget.</h2>
+                                </div>
+                                <div class="col-md-4">
+                                        
+                                </div>                        
+                                <div class="col-md-4 pad-right">
+                                    <p>Aenean euismod imperdiet est eget vestibulum. Vestibulum vel lectus lacus. Sed sollicitudin varius erat, eu posuere nisl lacinia id.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <div class="intro">
+                    <div id="lastPage" class="page-column-full">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="lastpage-title">THE LAST PAGE</h1>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-md-offset-3">
+                                    <h4>Ut eget sagittis mauris</h4>
+                                    <p>Vestibulum id vulputate orci, vitae tincidunt velit. Proin quis metus porttitor, pellentesque nibh quis, dictum sapien. Proin id enim sed erat imperdiet rutrum. Fusce id porta augue.</p>
+                                    <p>Donec pharetra ullamcorper malesuada. Sunc consectetur lacus eu efficitur porta. In egestas nulla in arcu feugiat imperdiet. Maecenas sed purus quis turpis euismod mollis ut ac turpis. Class aptent taciti sociosqu ad litora torquent.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p><img src="assets/imgs/last-page/your-tour.png" width="242" height="148" alt="Your Tour" /></p>
+                                    <h4>Sunc eu efficitur porta</h4>
+                                    <p>Ut non egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla ultricies iaculis neque sit amet porta.</p>
+                                </div>
+                                <div class="lastpage-parallax">
+                                    <img src="assets/imgs/last-page/parallax-img-5.png" class="parallax-item pi-1" />
+                                    <img src="assets/imgs/last-page/parallax-img-1.png" class="parallax-item pi-2" />
+                                    <img src="assets/imgs/last-page/parallax-img-3.png" class="parallax-item pi-3" />
+                                    <img src="assets/imgs/last-page/parallax-img-4.png" class="parallax-item pi-4" />
+                                    <img src="assets/imgs/last-page/parallax-img-3.png" class="parallax-item pi-5" />
+                                    <img src="assets/imgs/last-page/parallax-img-2.png" class="parallax-item pi-6" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /#fullpage -->
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.airport.min.js"></script>
+        <script src="assets/js/jquery.fullPage.min.js"></script>
+
+        <script type="text/javascript">
+            function toggleFullScreen(id) {
+
+                var element = document.getElementById(id);
+
+                if (element.mozRequestFullScreen) {
+                    element.mozRequestFullScreen();
+                } else if (element.webkitRequestFullScreen) {
+                    element.webkitRequestFullScreen();
+                }
+            }
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+                    sectionsColor: ['#659ea9', '#e74c3c', '#1BBC9B', '#dbdad5'],
+                    navigation: true,
+                    navigationPosition: 'right',
+                    loopHorizontal: true
+                });
+
+                var d = new Date();
+                var n = '- ' + d.getFullYear();
+
+                $(".currentYear").html(n);
+
+                setTimeout(function() { $(".tour-nyc").airport(["NYC"]) }, 600);
+
+            });
+        </script>
+    </body>
+</html>
